@@ -1,20 +1,30 @@
 @import './base.css';
 
+body {
+    color: var(--color-text);
+    background: var(--color-background);
+  }
+#app {
+  height: 100vh;
 
-
+}
+header{
+    height: 20%;
+}
 
 main{
-    min-height: 300px;
+    height: 60%;
+}
+
+section{
+    height: 20%;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 
 
-
-
-#app {
-  max-width: 1280px;
-
-}
 
 a,
 .green {

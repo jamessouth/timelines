@@ -20,7 +20,6 @@
         height: 3em;
         justify-content: space-around;
         align-content: center;
-        margin-bottom: 1em;
     }
     .up{
         background-color: blue;

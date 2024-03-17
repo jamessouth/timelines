@@ -1,20 +1,19 @@
 <script setup>
+import CardComp from '../components/CardComp.vue'
 
+
+let msgs = ["aaa", "bbb", "ccc"];
 </script>
 
 <template>
 
 
 
-   <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
-   </ul>
+    <ul>
+
+
+        <CardComp v-for="m in msgs" :key="m" :msg="m" />
+    </ul>
 
 
 
@@ -23,9 +22,7 @@
 </template>
 
 <style scoped>
-    ul{
-        min-height: 80%;
-    }
-
-
+ul {
+    min-height: 100%;
+}
 </style>
