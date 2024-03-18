@@ -1,7 +1,6 @@
 <script setup>
     import GameArea from '../components/GameArea.vue'
-    import UpDownButtons from '../components/UpDownButtons.vue'
-    import SubmitButton from '../components/SubmitButton.vue'
+    import ListButtons from '../components/ListButtons.vue'
 </script>
 
 <template>
@@ -9,7 +8,7 @@
     <GameArea />
   </main>
   <section>
-    <UpDownButtons/>
-    <SubmitButton/>
+    <ListButtons/>
+    
   </section>
 </template>

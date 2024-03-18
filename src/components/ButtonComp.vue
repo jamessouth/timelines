@@ -18,6 +18,7 @@ function cl(e){
 <style scoped>
     button{
         min-width: 4em;
+        height: 2em;
     }
 
 
