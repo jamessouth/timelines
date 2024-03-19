@@ -1,14 +1,15 @@
 <script setup>
 
-function cl(e){
-    console.log(e);
-}
+// function cl(e){
+//     console.log(e);
+//     @click="cl"
+// }
 </script>
 
 <template>
 
 
-    <button @click="cl">
+    <button >
         <slot></slot>
     </button>
 

@@ -2,28 +2,32 @@
 import CardComp from '../components/CardComp.vue'
 
 
-let msgs = ["aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh", "iii"];
+defineProps({
+  msgs: {
+    type: Array,
+    required: true
+  }
+})
 
-let newMsg = true;
+
 </script>
 
 <template>
 
 
     <ul>
-        <CardComp :newmsg="newMsg" v-show="newMsg" msg="hello" />
-        <CardComp v-for="(m, i) in msgs" :key="m+i" :msg="m" />
+        <CardComp :newmsg="m.new" v-for="(m, i) in msgs" :key="m.msg+i" :msg="m.msg" />
     </ul>
 
 </template>
 
 <style scoped>
-ul {
-    height: 100%;
-    width: 96%;
-    margin: auto;
-    background-color: lightcoral;
-    overflow-y: scroll;
-}
+    ul {
+        height: 100%;
+        width: 96%;
+        margin: auto;
+        background-color: lightcoral;
+        overflow-y: scroll;
+    }
 
 </style>

@@ -1,6 +1,11 @@
 <script setup>
 import ButtonComp from '../components/ButtonComp.vue'
-
+defineProps({
+  md: {
+    type: Function,
+    required: true
+  }
+})
 </script>
 
 <template>
@@ -8,7 +13,7 @@ import ButtonComp from '../components/ButtonComp.vue'
 
         <ButtonComp class="up">up</ButtonComp>
         <ButtonComp class="submit">submit</ButtonComp>
-        <ButtonComp class="down">down</ButtonComp>
+        <ButtonComp @click="md" class="down">down</ButtonComp>
     </div>
 
 </template>
